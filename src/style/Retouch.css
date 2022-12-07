@@ -1,0 +1,25 @@
+.retouch_frame {
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template: 600px 200px 10px / 200px 1fr 200px;
+    gap: 20px;
+}
+
+.retouch_function {
+    grid-column: 1;
+    grid-row: 1;
+    border: solid 1px;
+}
+
+.retouch_image {
+    grid-column: 2;
+    grid-row: 1;
+    border: solid 1px;
+}
+
+.retouch_info {
+    grid-column: 3;
+    grid-row: 1;
+    border: solid 1px;
+}
