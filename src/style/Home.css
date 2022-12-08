@@ -7,7 +7,12 @@
 }
 
 .image_container {
+    background-color: gray;
     grid-column: 1 / -1;
     grid-row: 1;
     border: solid 1px;
+    display: grid;
+    grid-template: auto / 88vw;
+    justify-content: center;
+    align-items: center;
 }

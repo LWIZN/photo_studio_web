@@ -7,6 +7,9 @@ import Home from "./pages/Home";
 import Retouch from "./pages/Retouch";
 import PhotoFrame from "./pages/PhotoFrame";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>

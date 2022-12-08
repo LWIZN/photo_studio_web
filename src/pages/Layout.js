@@ -12,10 +12,10 @@ export default function Layout() {
       <div className="title_horizontalLine"></div>
       <div className="functionBar_container">
         <a href="/Retouch" className="function">
-          FUNCTION1
+          Retouch
         </a>
         <a href="/PhotoFrame" className="function">
-          FUNCTION2
+          Photo Frame
         </a>
       </div>
       <Outlet />
