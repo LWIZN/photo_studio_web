@@ -4,11 +4,13 @@ import Carousel from "../components/Carousel";
 
 export default function Home() {
   return (
-    <div className="home_frame">
-      <div className="image_container">
-        <Carousel />
+    <div className="home_background">
+      <div className="home_frame">
+        <div className="image_container">
+          <Carousel />
+        </div>
+        <InfoContainer />
       </div>
-      <InfoContainer />
     </div>
   );
 }

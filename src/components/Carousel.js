@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import "../style/Carousel.css";
+import Images from "../image/index";
 
 export default function Carousel() {
   const settings = {
@@ -13,9 +14,15 @@ export default function Carousel() {
   return (
     <div className="carousel_container">
       <Slider {...settings}>
-        <div className="photo">1</div>
-        <div className="photo">2</div>
-        <div className="photo">3</div>
+        <div className="photo">
+          <img src={Images.pictureA} alt={"default"} />
+        </div>
+        <div className="photo">
+          <img src={Images.pictureB} alt={"default"} />
+        </div>
+        <div className="photo">
+          <img src={Images.pictureA} alt={"default"} />
+        </div>
       </Slider>
     </div>
   );
