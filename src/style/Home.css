@@ -1,13 +1,24 @@
 .home_background {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    background: url(../image/home_backgroung.jpg);
+    background: rgba(0, 0, 0, .55) url(../image/home_backgroung.jpg);
+    background-blend-mode: darken;
     background-size: auto;
     display: grid;
-    grid-template: 60px 500px auto / 30px auto 30px;
+    grid-template: 60px 600px auto / 30px auto 30px;
 
-    height: 600px;
+    height: 650px;
     width: 100vw;
+}
+
+.welcome_container {
+    color: #fff;
+    font-size: 25px;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home_frame {
@@ -19,7 +30,7 @@
 }    
 
 .image_container {
-    background-color: gray;
+    background-color: #fff;
     grid-column: 1 / -1;
     grid-row: 1;
     border: solid 1px;
