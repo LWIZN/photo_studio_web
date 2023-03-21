@@ -3,39 +3,58 @@
     grid-row: 1 / -1;
     background: rgba(0, 0, 0, .55) url(../image/home_backgroung.jpg);
     background-blend-mode: darken;
-    background-size: auto;
+    background-size: cover;
     display: grid;
-    grid-template: 60px 600px auto / 30px auto 30px;
-
-    height: 650px;
-    width: 100vw;
+    grid-template: 100% auto / 5% auto 5%;
+    row-gap: 30px;
+    height: 750px;
 }
 
 .welcome_container {
     color: #fff;
     font-size: 25px;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home_frame {
+.welcome p {
+    font-size: 100px;
+}
+
+.about {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 80px;
+    margin: 0;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.about_container {
     grid-column: 2;
     grid-row: 3;
-    display: grid;
-    grid-template: 400px 200px 10px / 1fr;
-    row-gap: 20px;
-}    
+}
 
 .image_container {
-    background-color: #fff;
+    background-color: #00000055; 
     grid-column: 1 / -1;
-    grid-row: 1;
-    border: solid 1px;
+    grid-row: 4;
     display: grid;
-    grid-template: auto / 88vw;
-    justify-content: center;
+    grid-template: auto / 100vw;
     align-items: center;
+}
+
+.introduce_container {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.info_container {
+    grid-column: 2;
+    grid-row: 6;
 }

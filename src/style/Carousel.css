@@ -1,10 +1,33 @@
 .carousel_container {
-
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.photo {
-    /* font-size: 300px; */
-    /* background-color: white; */
-    /* border: solid 1px; */
-    height: 330px;
+.img_container {
+}
+
+.img_container img {
+    max-width: 110%;
+    max-height: 110%;
+}
+
+.slick-list {
+    position: relative;
+    width: 100%;
+}
+
+.slick-slide {
+    height: 700px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.slick-dots {
+    margin-bottom: 50px;
 }

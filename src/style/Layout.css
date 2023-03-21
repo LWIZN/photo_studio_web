@@ -5,43 +5,55 @@ body {
     font-family: '微軟正黑體';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .frame {
     display: grid;
-    grid-template: 60px 40px / 30px auto 30px;
+    grid-template: 70px auto / 5% auto 5%;
     width: 100vw;
     height: 100vh;
 }
 
-.title_container {
+.position {
     z-index: 1;
-    grid-column: 1 / -1;
-    grid-row: 1;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    transition: .1s;
+}
+
+.position_available {
+    background-color: #00000000;
+}
+
+.position_unavailable {
     background-color: #00000070;
+}
+
+.layout_container {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.layout_container_available {
+    font-size: 50px;
+}
+
+.layout_container_unavailable {
+    font-size: 30px;
     backdrop-filter: blur(15px);
 }
 
 .title {
     z-index: 1;
     color: #fff;
-    font-size: 40px;
     text-decoration: none;
-}
-
-.title_horizontalLine {
-    grid-column: 2;
-    grid-row: 2;
-    border-top: solid #000 1px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 60px;
+    transition: .1s;
 }
 
 .functionBar_container {
@@ -52,7 +64,49 @@ body {
     align-items: center
 }
 
-.function {
+.function1, .function2 {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
+    transition: .1s;
 }
+
+.function1:hover, .function2:hover {
+    color: aqua;
+}
+
+.btn-back {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    background-color: #00000070;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffffaa;
+    line-height: 70px;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px #b0bec5;
+    backdrop-filter: blur(15px);
+    transition: .1s;
+}
+
+.btn-back:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.btn_available{
+    height: 70px;
+    width: 70px;
+}
+
+.btn_unavailable {
+    height: 0px;
+    width: 0px;
+    color: #00000000;
+    background-color: #00000000;
+}
+

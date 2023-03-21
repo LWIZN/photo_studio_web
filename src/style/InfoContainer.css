@@ -1,24 +1,76 @@
-.info_container {
+.info_frame {
     grid-column: 1 / -1;
     display: grid;
-    grid-template: auto / repeat(3, 1fr);
+    grid-template: 80px / repeat(3, 1fr);
     column-gap: 20px;
 }
 
-.about_info {
+.info_frame img {
+    width: 100%;
+}
+
+.copyright_info p {
+    margin: 10px;
+    font-size: medium;
+    text-align: left;
+    line-height: 400%;
+}
+
+.copyright_info {
     grid-column: 1;
     grid-row: 1;
-    border: solid 1px;
 }
 
-.ship_info {
+.follow_info {
     grid-column: 2;
     grid-row: 1;
-    border: solid 1px;
+    display: grid;
+    grid-template: auto / repeat(3, 60px);
+    padding-left: 25%;
+    padding-right: 25%;
+    align-items: center;
+    justify-content: center;
 }
 
-.other_info {
+.facebook {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.instagram {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.wechat {
     grid-column: 3;
     grid-row: 1;
-    border: solid 1px;
+}
+
+.facebook, .instagram, .wechat {
+    transition: .2s;
+}
+
+.facebook:hover {
+    filter: invert(50%) sepia(80%) saturate(150%) hue-rotate(150deg);
+}
+
+.instagram:hover {
+    filter: invert(50%) sepia(80%) saturate(150%) hue-rotate(280deg);
+} 
+
+.wechat:hover {
+    filter: invert(50%) sepia(80%) saturate(150%) hue-rotate(50deg);
+}
+
+.privacy_info {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.privacy_info p {
+    margin: 10px;
+    font-size: medium;
+    text-align: right;
+    line-height: 400%;
 }
